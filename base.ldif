@@ -1,0 +1,21 @@
+dn: dc=rrdrlabs,dc=net
+dc: rrdrlabs
+o: RRDRLABS
+objectClass: dcObject
+objectClass: organization
+
+dn: ou=People,dc=rrdrlabs,dc=net
+ou: People
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=Group,dc=rrdrlabs,dc=net
+ou: Group
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=Sudoers,dc=rrdrlabs,dc=net
+ou: Sudoers
+objectClass: top
+objectClass: organizationalUnit
+

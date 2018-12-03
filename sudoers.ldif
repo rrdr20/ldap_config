@@ -1,0 +1,41 @@
+dn: cn=defaults,ou=Sudoers,dc=rrdrlabs,dc=net
+objectClass: top
+objectClass: sudoRole
+cn: defaults
+description: Default sudoOptions go here
+sudoOption: env_reset
+sudoOption: mail_badpass
+sudoOrder: 1
+
+dn: cn=root,ou=Sudoers,dc=rrdrlabs,dc=net
+objectClass: top
+objectClass: sudoRole
+cn: root
+sudoUser: root
+sudoHost: ALL
+sudoRunAsUser: ALL
+sudoRunAsGroup: ALL
+sudoCommand: ALL
+sudoOrder: 2
+
+dn: cn=%admin,ou=Sudoers,dc=rrdrlabs,dc=net
+objectClass: top
+objectClass: sudoRole
+cn: %admin
+sudoUser: %admin
+sudoHost: ALL
+sudoRunAsUser: ALL
+sudoCommand: ALL
+sudoOrder: 3
+
+dn: cn=%sudo,ou=Sudoers,dc=rrdrlabs,dc=net
+objectClass: top
+objectClass: sudoRole
+cn: %sudo
+sudoUser: %sudo
+sudoHost: ALL
+sudoRunAsUser: ALL
+sudoRunAsGroup: ALL
+sudoCommand: ALL
+sudoOrder: 4
+
